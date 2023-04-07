@@ -1,0 +1,3682 @@
+{
+	"info": {
+		"_postman_id": "7baadde7-f639-4ef1-a6dd-f241517ff94d",
+		"name": "java api v1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18201727"
+	},
+	"item": [
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "api/category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/category",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/category",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:42:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Laptop\",\n            \"description\": \"Laptop chính hãng chất lượng cao\",\n            \"active\": 1\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Điện thoại\",\n            \"description\": \"Điện thoại chính hãng, chất lượng cao\",\n            \"active\": 1\n        }\n    ]\n}"
+						},
+						{
+							"name": "api/category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/category",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:27:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Thể loại sản phẩm hiện tại đang trống!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/category/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/category/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:42:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Laptop\",\n        \"description\": \"Laptop chính hãng chất lượng cao\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/:id",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:27:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy thể loại sản phẩm!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Điện thoại\",\r\n    \"description\": \"Điện thoại chính hãng, chất lượng cao\"\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/category",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Điện thoại\",\r\n    \"description\": \"Điện thoại chính hãng, chất lượng cao\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/category",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:42:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm thể loại sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Điện thoại\",\n        \"description\": \"Điện thoại chính hãng, chất lượng cao\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"\",\r\n    \"description\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/category",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:41:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"name\": [\n            \"Vui lòng không bỏ trống tên thể loại sản phẩm!\"\n        ],\n        \"description\": [\n            \"Vui lòng không bỏ trống mô tả thể loại sản phẩm!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/category/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Laptop\",\r\n    \"description\": \"Laptop chính hãng chất lượng cao\"\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/category/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Laptop\",\r\n    \"description\": \"Laptop chính hãng chất lượng cao\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:41:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Cập nhật thể loại sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Laptop\",\n        \"description\": \"Laptop chính hãng chất lượng cao\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"\",\r\n    \"description\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/5",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:41:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"name\": [\n            \"Vui lòng không bỏ trống tên thể loại sản phẩm!\"\n        ],\n        \"description\": [\n            \"Vui lòng không bỏ trống mô tả thể loại sản phẩm!\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Laptop\",\r\n    \"description\": \"Laptop chính hãng chất lượng cao\",\r\n    \"active\": 1\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/5",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:31:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy thể loại sản phẩm!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/category/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/category/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/category/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/category/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 13:12:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Xóa thể loại sản phẩm thành công!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "api/product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:24:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Iphone 14\",\n            \"description\": \"Điện thoại chính hãng\",\n            \"price\": 14000000,\n            \"image\": \"Screenshot (6).png\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:22:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Sản phẩm hiện tại đang trống!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/product/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/product/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:24:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Iphone 14\",\n        \"description\": \"Điện thoại chính hãng\",\n        \"price\": 14000000,\n        \"image\": \"Screenshot (6).png\",\n        \"trademark\": \"Apple\",\n        \"active\": 1,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Smartphone\",\n            \"description\": \"Điện thoại thông minh\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/product/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/2",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:22:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy sản phẩm!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Iphone 16",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Điện thoại chính hãng",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "14000000",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "red",
+									"type": "text"
+								},
+								{
+									"key": "imageFile",
+									"type": "file",
+									"src": "/C:/Users/letri/OneDrive/Hình ảnh/Ảnh chụp màn hình/ww.png"
+								},
+								{
+									"key": "trademark",
+									"value": "Apple",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/product",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Iphone 14",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Điện thoại chính hãng",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "14000000",
+											"type": "text"
+										},
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": "/C:/Users/letri/OneDrive/Hình ảnh/Ảnh chụp màn hình/Screenshot (6).png"
+										},
+										{
+											"key": "trademark",
+											"value": "Apple",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:23:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Iphone 14\",\n        \"description\": \"Điện thoại chính hãng\",\n        \"price\": 14000000,\n        \"image\": \"Screenshot (6).png\",\n        \"trademark\": \"Apple\",\n        \"active\": 1,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Smartphone\",\n            \"description\": \"Điện thoại thông minh\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "trademark",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:22:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"image\": [\n            \"Vui lòng chọn ảnh cho sản phẩm!\"\n        ],\n        \"price\": [\n            \"Vui lòng không bỏ trống giá sản phẩm!\"\n        ],\n        \"name\": [\n            \"Vui lòng không bỏ trống tên sản phẩm!\"\n        ],\n        \"description\": [\n            \"Vui lòng không bỏ trống mô tả sản phẩm!\"\n        ],\n        \"trademark\": [\n            \"Vui lòng không bỏ trống thương hiệu sản phẩm!\"\n        ],\n        \"category\": [\n            \"Thể loại sản phẩm không hợp lệ!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/product/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Iphone 19",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "4444",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "blue",
+									"type": "text"
+								},
+								{
+									"key": "imageFile",
+									"type": "file",
+									"src": "/C:/Users/letri/OneDrive/Hình ảnh/Ảnh chụp màn hình/ww.png"
+								},
+								{
+									"key": "trademark",
+									"value": "SamSung",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/2",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Iphone 14",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Điện thoại chính hãng",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "14000000",
+											"type": "text"
+										},
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": "/C:/Users/letri/OneDrive/Hình ảnh/Ảnh chụp màn hình/Screenshot (6).png"
+										},
+										{
+											"key": "trademark",
+											"value": "Apple",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:23:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Iphone 14\",\n        \"description\": \"Điện thoại chính hãng\",\n        \"price\": 14000000,\n        \"image\": \"Screenshot (6).png\",\n        \"trademark\": \"Apple\",\n        \"active\": 1,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Smartphone\",\n            \"description\": \"Điện thoại thông minh\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "imageFile",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "trademark",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/product",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:22:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"image\": [\n            \"Vui lòng chọn ảnh cho sản phẩm!\"\n        ],\n        \"price\": [\n            \"Vui lòng không bỏ trống giá sản phẩm!\"\n        ],\n        \"name\": [\n            \"Vui lòng không bỏ trống tên sản phẩm!\"\n        ],\n        \"description\": [\n            \"Vui lòng không bỏ trống mô tả sản phẩm!\"\n        ],\n        \"trademark\": [\n            \"Vui lòng không bỏ trống thương hiệu sản phẩm!\"\n        ],\n        \"category\": [\n            \"Thể loại sản phẩm không hợp lệ!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/product/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/product/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 16:26:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Xóa thể loại sản phẩm thành công!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/find-by-category/{categoryId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/find-by-category/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"find-by-category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/find-by-category/{categoryId}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/find-by-category/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"find-by-category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:45:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"iPhone 13 Pro Max\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 2999,\n            \"color\": \"Đen\",\n            \"image\": \"iphone13promax.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Samsung Galaxy Z Flip 3\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 1499,\n            \"color\": \"Hồng\",\n            \"image\": \"galaxyzflip3.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 13,\n            \"name\": \"OnePlus 10 Pro\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 999,\n            \"color\": \"Đen\",\n            \"image\": \"oneplus10pro.jpg\",\n            \"trademark\": \"OnePlus\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/sort-by-price-asc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/sort-by-price-asc",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"sort-by-price-asc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/sort-by-price-asc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/sort-by-price-asc",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"sort-by-price-asc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:46:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 18,\n            \"name\": \"Apple Pencil (2nd generation)\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 129,\n            \"color\": \"Trắng\",\n            \"image\": \"applepencil2ndgen.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Samsung Galaxy Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Đen\",\n            \"image\": \"galaxybudspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Samsung Galaxy S21 Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxys21budspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Fitbit Versa 3\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 229,\n            \"color\": \"Đen\",\n            \"image\": \"fitbitversa3.jpg\",\n            \"trademark\": \"Fitbit\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 7,\n            \"name\": \"AirPods Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 249,\n            \"color\": \"Trắng\",\n            \"image\": \"airpodspro.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Samsung Galaxy Watch 4 Classic\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 349,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxywatch4classic.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Apple Watch Series 7\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 399,\n            \"color\": \"Đỏ\",\n            \"image\": \"applewatchseries7.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Garmin Venu 2\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 399,\n            \"color\": \"Bạc\",\n            \"image\": \"garminvenu2.jpg\",\n            \"trademark\": \"Garmin\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Lenovo Tab P11 Pro\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 449,\n            \"color\": \"Xanh\",\n            \"image\": \"lenovotabp11pro.jpg\",\n            \"trademark\": \"Lenovo\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 14,\n            \"name\": \"iPad Mini 6\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 499,\n            \"color\": \"Xám\",\n            \"image\": \"ipadmini6.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Samsung Galaxy Tab S7 FE\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 649,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxytabs7fe.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 3,\n            \"name\": \"iPad Air 4\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 799,\n            \"color\": \"Xám\",\n            \"image\": \"ipadair4.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 17,\n            \"name\": \"HP Envy 13\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 899,\n            \"color\": \"Bạc\",\n            \"image\": \"hpenvy13.jpg\",\n            \"trademark\": \"HP\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 13,\n            \"name\": \"OnePlus 10 Pro\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 999,\n            \"color\": \"Đen\",\n            \"image\": \"oneplus10pro.jpg\",\n            \"trademark\": \"OnePlus\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Dell XPS 13\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1099,\n            \"color\": \"Xanh\",\n            \"image\": \"dellxps13.jpg\",\n            \"trademark\": \"Dell\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 5,\n            \"name\": \"MacBook Air M1\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1299,\n            \"color\": \"Bạc\",\n            \"image\": \"macbookairm1.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Samsung Galaxy Z Flip 3\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 1499,\n            \"color\": \"Hồng\",\n            \"image\": \"galaxyzflip3.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 16,\n            \"name\": \"MacBook Pro M1\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1499,\n            \"color\": \"Bạc\",\n            \"image\": \"macbookprom1.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Nikon Z6 II\",\n            \"description\": \"Máy ảnh kỹ thuật số\",\n            \"price\": 1799,\n            \"color\": \"Đen\",\n            \"image\": \"nikonz6ii.jpg\",\n            \"trademark\": \"Nikon\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 6,\n                \"name\": \"Camera\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Sony A7 III\",\n            \"description\": \"Máy ảnh kỹ thuật số\",\n            \"price\": 1999,\n            \"color\": \"Đen\",\n            \"image\": \"sonya7iii.jpg\",\n            \"trademark\": \"Sony\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 6,\n                \"name\": \"Camera\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 1,\n            \"name\": \"iPhone 13 Pro Max\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 2999,\n            \"color\": \"Đen\",\n            \"image\": \"iphone13promax.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/sort-by-price-desc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/sort-by-price-desc",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"sort-by-price-desc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/sort-by-price-desc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/sort-by-price-desc",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"sort-by-price-desc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:47:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"iPhone 13 Pro Max\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 2999,\n            \"color\": \"Đen\",\n            \"image\": \"iphone13promax.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Sony A7 III\",\n            \"description\": \"Máy ảnh kỹ thuật số\",\n            \"price\": 1999,\n            \"color\": \"Đen\",\n            \"image\": \"sonya7iii.jpg\",\n            \"trademark\": \"Sony\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 6,\n                \"name\": \"Camera\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Nikon Z6 II\",\n            \"description\": \"Máy ảnh kỹ thuật số\",\n            \"price\": 1799,\n            \"color\": \"Đen\",\n            \"image\": \"nikonz6ii.jpg\",\n            \"trademark\": \"Nikon\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 6,\n                \"name\": \"Camera\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Samsung Galaxy Z Flip 3\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 1499,\n            \"color\": \"Hồng\",\n            \"image\": \"galaxyzflip3.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 16,\n            \"name\": \"MacBook Pro M1\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1499,\n            \"color\": \"Bạc\",\n            \"image\": \"macbookprom1.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 5,\n            \"name\": \"MacBook Air M1\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1299,\n            \"color\": \"Bạc\",\n            \"image\": \"macbookairm1.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Dell XPS 13\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 1099,\n            \"color\": \"Xanh\",\n            \"image\": \"dellxps13.jpg\",\n            \"trademark\": \"Dell\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 13,\n            \"name\": \"OnePlus 10 Pro\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 999,\n            \"color\": \"Đen\",\n            \"image\": \"oneplus10pro.jpg\",\n            \"trademark\": \"OnePlus\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 17,\n            \"name\": \"HP Envy 13\",\n            \"description\": \"Máy tính xách tay\",\n            \"price\": 899,\n            \"color\": \"Bạc\",\n            \"image\": \"hpenvy13.jpg\",\n            \"trademark\": \"HP\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 3,\n                \"name\": \"Laptop\",\n                \"description\": \"Máy tính xách tay\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 3,\n            \"name\": \"iPad Air 4\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 799,\n            \"color\": \"Xám\",\n            \"image\": \"ipadair4.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Samsung Galaxy Tab S7 FE\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 649,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxytabs7fe.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 14,\n            \"name\": \"iPad Mini 6\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 499,\n            \"color\": \"Xám\",\n            \"image\": \"ipadmini6.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Lenovo Tab P11 Pro\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 449,\n            \"color\": \"Xanh\",\n            \"image\": \"lenovotabp11pro.jpg\",\n            \"trademark\": \"Lenovo\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Apple Watch Series 7\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 399,\n            \"color\": \"Đỏ\",\n            \"image\": \"applewatchseries7.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Garmin Venu 2\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 399,\n            \"color\": \"Bạc\",\n            \"image\": \"garminvenu2.jpg\",\n            \"trademark\": \"Garmin\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Samsung Galaxy Watch 4 Classic\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 349,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxywatch4classic.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 7,\n            \"name\": \"AirPods Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 249,\n            \"color\": \"Trắng\",\n            \"image\": \"airpodspro.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Fitbit Versa 3\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 229,\n            \"color\": \"Đen\",\n            \"image\": \"fitbitversa3.jpg\",\n            \"trademark\": \"Fitbit\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Samsung Galaxy Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Đen\",\n            \"image\": \"galaxybudspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Samsung Galaxy S21 Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxys21budspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Apple Pencil (2nd generation)\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 129,\n            \"color\": \"Trắng\",\n            \"image\": \"applepencil2ndgen.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/find-by-trademark/{trademark}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/find-by-trademark/Samsung",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"find-by-trademark",
+								"Samsung"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/find-by-trademark/{trademark}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/find-by-trademark/Samsung",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"find-by-trademark",
+										"Samsung"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:53:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"Samsung Galaxy Z Flip 3\",\n            \"description\": \"Điện thoại thông minh\",\n            \"price\": 1499,\n            \"color\": \"Hồng\",\n            \"image\": \"galaxyzflip3.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Samsung Galaxy Tab S7 FE\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 649,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxytabs7fe.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Samsung Galaxy Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Đen\",\n            \"image\": \"galaxybudspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Samsung Galaxy Watch 4 Classic\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 349,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxywatch4classic.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Samsung Galaxy S21 Buds Pro\",\n            \"description\": \"Phụ kiện điện thoại\",\n            \"price\": 199,\n            \"color\": \"Bạc\",\n            \"image\": \"galaxys21budspro.jpg\",\n            \"trademark\": \"Samsung\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 4,\n                \"name\": \"Accessory\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/find-by-color/{color}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/product/find-by-color/Đỏ",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"find-by-color",
+								"Đỏ"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/find-by-color/{color}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/product/find-by-color/Đỏ",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"find-by-color",
+										"Đỏ"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 31 Mar 2023 13:54:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 9,\n            \"name\": \"Apple Watch Series 7\",\n            \"description\": \"Đồng hồ thông minh\",\n            \"price\": 399,\n            \"color\": \"Đỏ\",\n            \"image\": \"applewatchseries7.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 5,\n                \"name\": \"Smartwatch\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "api/v1/user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/user",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/user",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:33:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 4,\n            \"name\": \"Lê Trí Đức\",\n            \"username\": \"letriduc\",\n            \"password\": \"123456\",\n            \"email\": \"letriduc@gmail.com\",\n            \"phone\": \"0377025449\",\n            \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\",\n            \"active\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/user/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/user/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/4",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:33:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"Lê Trí Đức\",\n        \"username\": \"letriduc\",\n        \"password\": \"123456\",\n        \"email\": \"letriduc@gmail.com\",\n        \"phone\": \"0377025449\",\n        \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:33:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy tài khoản người dùng!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"username\": \"letriduc\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"phone\": \"0377025449\",\r\n    \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/user",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"username\": \"letriduc\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"phone\": \"0377025449\",\r\n    \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:31:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm tài khoản người dùng thành công!\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"Lê Trí Đức\",\n        \"username\": \"letriduc\",\n        \"password\": \"123456\",\n        \"email\": \"letriduc@gmail.com\",\n        \"phone\": \"0377025449\",\n        \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/v1/user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"email\": \"\",\r\n    \"phone\": \"\",\r\n    \"address\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:32:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"password\": [\n            \"Vui lòng không bỏ trống mật khẩu!\"\n        ],\n        \"address\": [\n            \"Vui lòng không bỏ trống Địa chỉ!\"\n        ],\n        \"phone\": [\n            \"Vui lòng không bỏ trống Số điện thoại!\"\n        ],\n        \"name\": [\n            \"Vui lòng không bỏ trống Họ và tên!\"\n        ],\n        \"email\": [\n            \"Vui lòng không bỏ trống Email!\"\n        ],\n        \"username\": [\n            \"Vui lòng không bỏ trống tên người dùng!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/user/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"username\": \"letriduc\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"phone\": \"0377025449\",\r\n    \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/user/6",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"username\": \"letriduc\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"phone\": \"0377025449\",\r\n    \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/4",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:36:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Cập nhật tài khoản người dùng thành công!\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"Lê Trí Đức\",\n        \"username\": \"letriduc\",\n        \"password\": \"123456\",\n        \"email\": \"letriduc@gmail.com\",\n        \"phone\": \"0377025449\",\n        \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\",\n        \"active\": 1\n    }\n}"
+						},
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"username\": \"letriduc\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"phone\": \"0377025449\",\r\n    \"address\": \"19/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/6",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:36:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"address\": [\n            \"Địa chỉ đã tồn tại!\"\n        ],\n        \"phone\": [\n            \"Số điện thoại đã tồn tại!\"\n        ],\n        \"name\": [\n            \"Họ và tên đã tồn tại!\"\n        ],\n        \"email\": [\n            \"Email đã tồn tại!\"\n        ],\n        \"username\": [\n            \"Tên người dùng đã tồn tại!\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Lê Trí Đức 1\",\r\n    \"username\": \"letriduc1\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"letriduc21@gmail.com\",\r\n    \"phone\": \"0377025448\",\r\n    \"address\": \"119/420, Mỹ Hội, Mỹ Hội Đông, Chợ Mới, An Giang\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/6",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:37:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy tài khoản người dùng!\"\n}"
+						},
+						{
+							"name": "api/v1/user/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"\",\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"email\": \"\",\r\n    \"phone\": \"\",\r\n    \"address\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/6",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:37:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"password\": [\n            \"Vui lòng không bỏ trống mật khẩu!\"\n        ],\n        \"address\": [\n            \"Vui lòng không bỏ trống Địa chỉ!\"\n        ],\n        \"phone\": [\n            \"Vui lòng không bỏ trống Số điện thoại!\"\n        ],\n        \"name\": [\n            \"Vui lòng không bỏ trống Họ và tên!\"\n        ],\n        \"email\": [\n            \"Vui lòng không bỏ trống Email!\"\n        ],\n        \"username\": [\n            \"Vui lòng không bỏ trống tên người dùng!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/user/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/user/4",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/user/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/4",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:38:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Xóa tài khoản người dùng thành công!\"\n}"
+						},
+						{
+							"name": "api/user/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/user/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 14:38:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy tài khoản người dùng!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "api/v1/cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:35:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"iPhone 13 Pro Max\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 2999,\n                \"color\": \"Đen\",\n                \"image\": \"iphone13promax.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 2,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 3,\n                \"name\": \"iPad Air 4\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 799,\n                \"color\": \"Xám\",\n                \"image\": \"ipadair4.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 2,\n                \"name\": \"Trần Thị B\",\n                \"username\": \"tranthib\",\n                \"password\": \"abcdef\",\n                \"email\": \"tranthib@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 2 đường DEF, Quận MNO, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 3,\n            \"quantity\": 3,\n            \"product\": {\n                \"id\": 2,\n                \"name\": \"Samsung Galaxy Z Flip 3\",\n                \"description\": \"Điện thoại thông minh\",\n                \"price\": 1499,\n                \"color\": \"Hồng\",\n                \"image\": \"galaxyzflip3.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"Lê Văn C\",\n                \"username\": \"levanc\",\n                \"password\": \"xyz123\",\n                \"email\": \"levanc@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 3 đường GHI, Quận KLM, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 4,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 4,\n                \"name\": \"Samsung Galaxy Tab S7 FE\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 649,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxytabs7fe.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 4,\n                \"name\": \"Phạm Thị D\",\n                \"username\": \"phamthid\",\n                \"password\": \"abcxyz\",\n                \"email\": \"phamthid@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 4 đường JKL, Quận PQR, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 5,\n                \"name\": \"MacBook Air M1\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1299,\n                \"color\": \"Bạc\",\n                \"image\": \"macbookairm1.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 5,\n                \"name\": \"Nguyễn Văn E\",\n                \"username\": \"nguyenvane\",\n                \"password\": \"123abc\",\n                \"email\": \"nguyenvane@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 5 đường MNO, Quận STU, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 6,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 6,\n                \"name\": \"Dell XPS 13\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1099,\n                \"color\": \"Xanh\",\n                \"image\": \"dellxps13.jpg\",\n                \"trademark\": \"Dell\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 6,\n                \"name\": \"Trần Thị F\",\n                \"username\": \"tranthif\",\n                \"password\": \"xyz789\",\n                \"email\": \"tranthif@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 6 đường PQR, Quận VWX, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 7,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 7,\n                \"name\": \"AirPods Pro\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"price\": 249,\n                \"color\": \"Trắng\",\n                \"image\": \"airpodspro.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 4,\n                    \"name\": \"Accessory\",\n                    \"description\": \"Phụ kiện điện thoại\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 7,\n                \"name\": \"Lê Văn G\",\n                \"username\": \"levang\",\n                \"password\": \"123xyz\",\n                \"email\": \"levang@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 7 đường STU, Quận YZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 8,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 9,\n                \"name\": \"Apple Watch Series 7\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 399,\n                \"color\": \"Đỏ\",\n                \"image\": \"applewatchseries7.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 8,\n                \"name\": \"Phạm Thị H\",\n                \"username\": \"phamthih\",\n                \"password\": \"abc789\",\n                \"email\": \"phamthih@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 8 đường VWX, Quận AB, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 9,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 10,\n                \"name\": \"Samsung Galaxy Watch 4 Classic\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 349,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxywatch4classic.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 9,\n                \"name\": \"Nguyễn Văn I\",\n                \"username\": \"nguyenvani\",\n                \"password\": \"123abcxyz\",\n                \"email\": \"nguyenvani@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 9 đường YZ, Quận CD, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 11,\n                \"name\": \"Sony A7 III\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"price\": 1999,\n                \"color\": \"Đen\",\n                \"image\": \"sonya7iii.jpg\",\n                \"trademark\": \"Sony\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 6,\n                    \"name\": \"Camera\",\n                    \"description\": \"Máy ảnh kỹ thuật số\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 10,\n                \"name\": \"Trần Thị K\",\n                \"username\": \"tranthik\",\n                \"password\": \"xyz789abc\",\n                \"email\": \"tranthik@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 10 đường AB, Quận EF, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 11,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"iPhone 13 Pro Max\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 2999,\n                \"color\": \"Đen\",\n                \"image\": \"iphone13promax.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 2,\n                \"name\": \"Trần Thị B\",\n                \"username\": \"tranthib\",\n                \"password\": \"abcdef\",\n                \"email\": \"tranthib@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 2 đường DEF, Quận MNO, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 12,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 3,\n                \"name\": \"iPad Air 4\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 799,\n                \"color\": \"Xám\",\n                \"image\": \"ipadair4.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"Lê Văn C\",\n                \"username\": \"levanc\",\n                \"password\": \"xyz123\",\n                \"email\": \"levanc@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 3 đường GHI, Quận KLM, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 13,\n            \"quantity\": 3,\n            \"product\": {\n                \"id\": 2,\n                \"name\": \"Samsung Galaxy Z Flip 3\",\n                \"description\": \"Điện thoại thông minh\",\n                \"price\": 1499,\n                \"color\": \"Hồng\",\n                \"image\": \"galaxyzflip3.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 4,\n                \"name\": \"Phạm Thị D\",\n                \"username\": \"phamthid\",\n                \"password\": \"abcxyz\",\n                \"email\": \"phamthid@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 4 đường JKL, Quận PQR, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 14,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 4,\n                \"name\": \"Samsung Galaxy Tab S7 FE\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 649,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxytabs7fe.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 5,\n                \"name\": \"Nguyễn Văn E\",\n                \"username\": \"nguyenvane\",\n                \"password\": \"123abc\",\n                \"email\": \"nguyenvane@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 5 đường MNO, Quận STU, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 15,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 5,\n                \"name\": \"MacBook Air M1\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1299,\n                \"color\": \"Bạc\",\n                \"image\": \"macbookairm1.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 6,\n                \"name\": \"Trần Thị F\",\n                \"username\": \"tranthif\",\n                \"password\": \"xyz789\",\n                \"email\": \"tranthif@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 6 đường PQR, Quận VWX, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 16,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 6,\n                \"name\": \"Dell XPS 13\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1099,\n                \"color\": \"Xanh\",\n                \"image\": \"dellxps13.jpg\",\n                \"trademark\": \"Dell\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 7,\n                \"name\": \"Lê Văn G\",\n                \"username\": \"levang\",\n                \"password\": \"123xyz\",\n                \"email\": \"levang@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 7 đường STU, Quận YZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 17,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 7,\n                \"name\": \"AirPods Pro\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"price\": 249,\n                \"color\": \"Trắng\",\n                \"image\": \"airpodspro.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 4,\n                    \"name\": \"Accessory\",\n                    \"description\": \"Phụ kiện điện thoại\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 8,\n                \"name\": \"Phạm Thị H\",\n                \"username\": \"phamthih\",\n                \"password\": \"abc789\",\n                \"email\": \"phamthih@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 8 đường VWX, Quận AB, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 18,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 9,\n                \"name\": \"Apple Watch Series 7\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 399,\n                \"color\": \"Đỏ\",\n                \"image\": \"applewatchseries7.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 9,\n                \"name\": \"Nguyễn Văn I\",\n                \"username\": \"nguyenvani\",\n                \"password\": \"123abcxyz\",\n                \"email\": \"nguyenvani@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 9 đường YZ, Quận CD, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 19,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 10,\n                \"name\": \"Samsung Galaxy Watch 4 Classic\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 349,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxywatch4classic.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 10,\n                \"name\": \"Trần Thị K\",\n                \"username\": \"tranthik\",\n                \"password\": \"xyz789abc\",\n                \"email\": \"tranthik@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 10 đường AB, Quận EF, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 20,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 11,\n                \"name\": \"Sony A7 III\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"price\": 1999,\n                \"color\": \"Đen\",\n                \"image\": \"sonya7iii.jpg\",\n                \"trademark\": \"Sony\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 6,\n                    \"name\": \"Camera\",\n                    \"description\": \"Máy ảnh kỹ thuật số\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 21,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"iPhone 13 Pro Max\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 2999,\n                \"color\": \"Đen\",\n                \"image\": \"iphone13promax.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"Lê Văn C\",\n                \"username\": \"levanc\",\n                \"password\": \"xyz123\",\n                \"email\": \"levanc@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 3 đường GHI, Quận KLM, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 22,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 3,\n                \"name\": \"iPad Air 4\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 799,\n                \"color\": \"Xám\",\n                \"image\": \"ipadair4.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 4,\n                \"name\": \"Phạm Thị D\",\n                \"username\": \"phamthid\",\n                \"password\": \"abcxyz\",\n                \"email\": \"phamthid@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 4 đường JKL, Quận PQR, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 23,\n            \"quantity\": 3,\n            \"product\": {\n                \"id\": 2,\n                \"name\": \"Samsung Galaxy Z Flip 3\",\n                \"description\": \"Điện thoại thông minh\",\n                \"price\": 1499,\n                \"color\": \"Hồng\",\n                \"image\": \"galaxyzflip3.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 5,\n                \"name\": \"Nguyễn Văn E\",\n                \"username\": \"nguyenvane\",\n                \"password\": \"123abc\",\n                \"email\": \"nguyenvane@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 5 đường MNO, Quận STU, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 24,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 4,\n                \"name\": \"Samsung Galaxy Tab S7 FE\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 649,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxytabs7fe.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Tablet\",\n                    \"description\": \"Máy tính bảng\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 6,\n                \"name\": \"Trần Thị F\",\n                \"username\": \"tranthif\",\n                \"password\": \"xyz789\",\n                \"email\": \"tranthif@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 6 đường PQR, Quận VWX, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 25,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 5,\n                \"name\": \"MacBook Air M1\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1299,\n                \"color\": \"Bạc\",\n                \"image\": \"macbookairm1.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 7,\n                \"name\": \"Lê Văn G\",\n                \"username\": \"levang\",\n                \"password\": \"123xyz\",\n                \"email\": \"levang@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 7 đường STU, Quận YZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 26,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 6,\n                \"name\": \"Dell XPS 13\",\n                \"description\": \"Máy tính xách tay\",\n                \"price\": 1099,\n                \"color\": \"Xanh\",\n                \"image\": \"dellxps13.jpg\",\n                \"trademark\": \"Dell\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 3,\n                    \"name\": \"Laptop\",\n                    \"description\": \"Máy tính xách tay\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 8,\n                \"name\": \"Phạm Thị H\",\n                \"username\": \"phamthih\",\n                \"password\": \"abc789\",\n                \"email\": \"phamthih@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 8 đường VWX, Quận AB, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 27,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 7,\n                \"name\": \"AirPods Pro\",\n                \"description\": \"Phụ kiện điện thoại\",\n                \"price\": 249,\n                \"color\": \"Trắng\",\n                \"image\": \"airpodspro.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 4,\n                    \"name\": \"Accessory\",\n                    \"description\": \"Phụ kiện điện thoại\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 9,\n                \"name\": \"Nguyễn Văn I\",\n                \"username\": \"nguyenvani\",\n                \"password\": \"123abcxyz\",\n                \"email\": \"nguyenvani@gmail.com\",\n                \"phone\": \"0909090909\",\n                \"address\": \"Số 9 đường YZ, Quận CD, Thành phố Đà Nẵng\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 28,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 9,\n                \"name\": \"Apple Watch Series 7\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 399,\n                \"color\": \"Đỏ\",\n                \"image\": \"applewatchseries7.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 10,\n                \"name\": \"Trần Thị K\",\n                \"username\": \"tranthik\",\n                \"password\": \"xyz789abc\",\n                \"email\": \"tranthik@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 10 đường AB, Quận EF, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 29,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 10,\n                \"name\": \"Samsung Galaxy Watch 4 Classic\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 349,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxywatch4classic.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 30,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 11,\n                \"name\": \"Sony A7 III\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"price\": 1999,\n                \"color\": \"Đen\",\n                \"image\": \"sonya7iii.jpg\",\n                \"trademark\": \"Sony\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 6,\n                    \"name\": \"Camera\",\n                    \"description\": \"Máy ảnh kỹ thuật số\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 2,\n                \"name\": \"Trần Thị B\",\n                \"username\": \"tranthib\",\n                \"password\": \"abcdef\",\n                \"email\": \"tranthib@gmail.com\",\n                \"phone\": \"0123456789\",\n                \"address\": \"Số 2 đường DEF, Quận MNO, Thành phố Hà Nội\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/cart/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:35:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 1,\n        \"quantity\": 2,\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"iPhone 13 Pro Max\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 2999,\n            \"color\": \"Đen\",\n            \"image\": \"iphone13promax.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Nguyễn Văn A\",\n            \"username\": \"nguyenvana\",\n            \"password\": \"123456\",\n            \"email\": \"nguyenvana@gmail.com\",\n            \"phone\": \"0987654321\",\n            \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/111",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"111"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:35:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Sản phẩm trong giỏ hàng không tồn tại!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/cart/find-by-user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart/find-by-user/8",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"find-by-user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart/find-by-user/{userId}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/find-by-user/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"find-by-user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:35:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"quantity\": 2,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"iPhone 13 Pro Max\",\n                \"description\": \"Máy tính bảng\",\n                \"price\": 2999,\n                \"color\": \"Đen\",\n                \"image\": \"iphone13promax.jpg\",\n                \"trademark\": \"Apple\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Smartphone\",\n                    \"description\": \"Điện thoại thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 20,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 11,\n                \"name\": \"Sony A7 III\",\n                \"description\": \"Máy ảnh kỹ thuật số\",\n                \"price\": 1999,\n                \"color\": \"Đen\",\n                \"image\": \"sonya7iii.jpg\",\n                \"trademark\": \"Sony\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 6,\n                    \"name\": \"Camera\",\n                    \"description\": \"Máy ảnh kỹ thuật số\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        },\n        {\n            \"id\": 29,\n            \"quantity\": 1,\n            \"product\": {\n                \"id\": 10,\n                \"name\": \"Samsung Galaxy Watch 4 Classic\",\n                \"description\": \"Đồng hồ thông minh\",\n                \"price\": 349,\n                \"color\": \"Bạc\",\n                \"image\": \"galaxywatch4classic.jpg\",\n                \"trademark\": \"Samsung\",\n                \"active\": 1,\n                \"category\": {\n                    \"id\": 5,\n                    \"name\": \"Smartwatch\",\n                    \"description\": \"Đồng hồ thông minh\",\n                    \"active\": 1\n                }\n            },\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Nguyễn Văn A\",\n                \"username\": \"nguyenvana\",\n                \"password\": \"123456\",\n                \"email\": \"nguyenvana@gmail.com\",\n                \"phone\": \"0987654321\",\n                \"address\": \"Số 1 đường ABC, Quận XYZ, Thành phố HCM\",\n                \"active\": 1\n            }\n        }\n    ]\n}"
+						},
+						{
+							"name": "api/v1/cart/find-by-user/{userId}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/find-by-user/8",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"find-by-user",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:37:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Giỏ hàng hiện tại đang trống hoặc người dùng không tồn tại!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 2,\r\n    \"product\": 14,\r\n    \"user\": 8\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 2,\r\n    \"product\": 1,\r\n    \"user\": 10\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 17:15:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm thể loại sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 52,\n        \"quantity\": 2,\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"iPhone 13 Pro Max\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 2999,\n            \"color\": \"Đen\",\n            \"image\": \"iphone13promax.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Smartphone\",\n                \"description\": \"Điện thoại thông minh\",\n                \"active\": 1\n            }\n        },\n        \"user\": {\n            \"id\": 10,\n            \"name\": \"Trần Thị K\",\n            \"username\": \"tranthik\",\n            \"password\": \"xyz789abc\",\n            \"email\": \"tranthik@gmail.com\",\n            \"phone\": \"0987654321\",\n            \"address\": \"Số 10 đường AB, Quận EF, Thành phố HCM\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 15:28:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"product\": [\n            \"Vui lòng không bỏ trống sản phẩm!\"\n        ],\n        \"quantity\": [\n            \"Vui lòng không bỏ trống số lượng sản phẩm!\"\n        ],\n        \"user\": [\n            \"Vui lòng không bỏ trống người dùng!\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": \"\",\r\n    \"product\": \"\",\r\n    \"user\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 15:28:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"product\": [\n            \"Vui lòng không bỏ trống sản phẩm!\"\n        ],\n        \"quantity\": [\n            \"Vui lòng không bỏ trống số lượng sản phẩm!\"\n        ],\n        \"user\": [\n            \"Vui lòng không bỏ trống người dùng!\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/cart/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 2,\r\n    \"status\": 1\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart/31",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"31"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 2\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/31",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"31"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 18:04:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Cập nhật thể loại sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 31,\n        \"quantity\": 2,\n        \"product\": {\n            \"id\": 14,\n            \"name\": \"iPad Mini 6\",\n            \"description\": \"Máy tính bảng\",\n            \"price\": 499,\n            \"color\": \"Xám\",\n            \"image\": \"ipadmini6.jpg\",\n            \"trademark\": \"Apple\",\n            \"active\": 1,\n            \"category\": {\n                \"id\": 2,\n                \"name\": \"Tablet\",\n                \"description\": \"Máy tính bảng\",\n                \"active\": 1\n            }\n        },\n        \"user\": {\n            \"id\": 8,\n            \"name\": \"Phạm Thị H\",\n            \"username\": \"phamthih\",\n            \"password\": \"abc789\",\n            \"email\": \"phamthih@gmail.com\",\n            \"phone\": \"0123456789\",\n            \"address\": \"Số 8 đường VWX, Quận AB, Thành phố Hà Nội\",\n            \"active\": 1\n        }\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/14",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 18:03:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"quantity\": [\n            \"Vui lòng không bỏ trống số lượng sản phẩm!\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 4\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/14",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 18:03:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Yêu cầu dữ liệu không hợp lệ!\",\n    \"errors\": {\n        \"quantity\": [\n            \"Số lượng chỉ cho phép bán là 1 đến 2 sản phẩm!\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 2\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/32",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"32"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 18:04:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy thể loại sản phẩm!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/cart/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/cart/1",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:37:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Xóa sản phẩm trong giỏ hàng thành công!\"\n}"
+						},
+						{
+							"name": "api/v1/cart/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/cart/1",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cart",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 12:37:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Không tìm thấy sản phẩm trong giỏ hàng!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "api/v1/order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/order",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/order",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/order",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 04:52:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"billId\": \"45d7fc82-ecde-4941-ba02-372a51b03e5a\",\n            \"name\": \"Lê Trí Đức\",\n            \"address\": \"19, Nguyễn Hữu Thọ, HCM\",\n            \"city\": \"HCM\",\n            \"phone\": \"0372836224\",\n            \"email\": \"letriducmhd@gmail.com\",\n            \"note\": \"giao tới địa chỉ như trên\",\n            \"cart\": \"[{\\\"productId\\\":1,\\\"quantity\\\":3}]\",\n            \"orderDate\": \"2023-04-07T09:33:18\"\n        },\n        {\n            \"id\": 2,\n            \"billId\": \"45d7fc22-ecde-4941-ba02-372a51b03b5a\",\n            \"name\": \"Lê Trí Đức\",\n            \"address\": \"19, Nguyễn Hữu Thọ, Tân Phong, Quận 7, HCM\",\n            \"city\": \"HCM\",\n            \"phone\": \"0933758223\",\n            \"email\": \"letriduc@gmail.com\",\n            \"note\": \"Những thiết bị như bút chiếu, micro\",\n            \"cart\": \"[{\\\"productId\\\":2,\\\"quantity\\\":2}]\",\n            \"orderDate\": \"2023-04-07T11:52:06\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/order/{billID}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{java.com}}/api/v1/order/45d7fc82-ecde-4941-ba02-372a51b03e5a",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"45d7fc82-ecde-4941-ba02-372a51b03e5a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/order/{billID}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{java.com}}/api/v1/order/45d7fc82-ecde-4941-ba02-372a51b03e5a",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"order",
+										"45d7fc82-ecde-4941-ba02-372a51b03e5a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 04:51:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"data\": {\n        \"id\": 1,\n        \"billId\": \"45d7fc82-ecde-4941-ba02-372a51b03e5a\",\n        \"name\": \"Lê Trí Đức\",\n        \"address\": \"19, Nguyễn Hữu Thọ, HCM\",\n        \"city\": \"HCM\",\n        \"phone\": \"0372836224\",\n        \"email\": \"letriducmhd@gmail.com\",\n        \"note\": \"giao tới địa chỉ như trên\",\n        \"cart\": \"[{\\\"productId\\\":1,\\\"quantity\\\":3}]\",\n        \"orderDate\": \"2023-04-07T09:33:18\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "api/v1/order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"billId\": \"45d7fc22-ecde-4941-ba02-372a51b03b5a\",\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"address\": \"19, Nguyễn Hữu Thọ, Tân Phong, Quận 7, HCM\",\r\n    \"city\": \"HCM\",\r\n    \"phone\": \"0933758223\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"note\": \"Những thiết bị như bút chiếu, micro\",\r\n    \"cart\": \"[{\\\"productId\\\":2,\\\"quantity\\\":2}]\"\r\n}"
+						},
+						"url": {
+							"raw": "{{java.com}}/api/v1/order",
+							"host": [
+								"{{java.com}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/v1/order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"billId\": \"45d7fc22-ecde-4941-ba02-372a51b03b5a\",\r\n    \"name\": \"Lê Trí Đức\",\r\n    \"address\": \"19, Nguyễn Hữu Thọ, Tân Phong, Quận 7, HCM\",\r\n    \"city\": \"HCM\",\r\n    \"phone\": \"0933758223\",\r\n    \"email\": \"letriduc@gmail.com\",\r\n    \"note\": \"Những thiết bị như bút chiếu, micro\",\r\n    \"cart\": \"[{\\\"productId\\\":2,\\\"quantity\\\":2}]\"\r\n}"
+								},
+								"url": {
+									"raw": "{{java.com}}/api/v1/order",
+									"host": [
+										"{{java.com}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 04:52:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Thêm hóa đơn sản phẩm thành công!\",\n    \"data\": {\n        \"id\": 2,\n        \"billId\": \"45d7fc22-ecde-4941-ba02-372a51b03b5a\",\n        \"name\": \"Lê Trí Đức\",\n        \"address\": \"19, Nguyễn Hữu Thọ, Tân Phong, Quận 7, HCM\",\n        \"city\": \"HCM\",\n        \"phone\": \"0933758223\",\n        \"email\": \"letriduc@gmail.com\",\n        \"note\": \"Những thiết bị như bút chiếu, micro\",\n        \"cart\": \"[{\\\"productId\\\":2,\\\"quantity\\\":2}]\",\n        \"orderDate\": \"2023-04-07T11:52:06.4171481\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
